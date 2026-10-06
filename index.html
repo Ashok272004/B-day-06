@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= BACKGROUND MUSIC ================= -->
+
+    <audio id="bgMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================= VOICE NOTE ================= -->
+
+    <audio id="voiceNote">
+        <source src="WhatsApp Audio 2026-10-06 at 2.33.53 PM.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro" id="intro">
+
+        <div class="stars"></div>
+
+        <div class="intro-content">
+
+            <div class="heart">❤️</div>
+
+            <p class="small-title">
+                A LITTLE SURPRISE FOR YOU
+            </p>
+
+            <h1 style="font-size: 55px !important;">
+                Hey My Dear Love...
+            </h1>
+
+            <p>
+                I made something special, just for you thangooo 😘.
+            </p>
+
+            <button class="main-btn" onclick="startSurprise()">
+                Open My Surprise 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="mainContent">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    TODAY IS OURS SPECIAL DAY
+                </p>
+
+                <h1>
+                    Wish You Happy Birthday
+                    <span>Sree Mahh 🥰</span>
+                </h1>
+
+                <p class="hero-text">
+                    To the person who makes my world
+                    a little brighter every single day.
+                </p>
+
+                <button class="scroll-btn"
+                    onclick="scrollToSection('memories')">
+
+                    ↓ Discover Your Surprise
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MEMORIES ================= -->
+
+        <section class="section memories" id="memories">
+
+            <p class="small-title">
+                OUR LITTLE MOMENTS
+            </p>
+
+            <h2>
+                Beautiful Memories 📸
+            </h2>
+
+            <p class="section-text">
+                Every picture has a story,
+                and every story has you.
+            </p>
+
+
+            <div class="gallery">
+
+                <div class="photo-card">
+
+                    <img src="WhatsApp Image 2026-10-06 at 12.47.57 PM.jpeg">
+
+                    <div class="photo-text">
+                        Ours Childhood Memories 😍
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="WhatsApp Image 2026-10-06 at 12.47.58 PM.jpeg">
+
+                    <div class="photo-text">
+                        My Favorite Picture in my Gallery 💕
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="WhatsApp Image 2026-10-06 at 12.49.25 PM.jpeg">
+
+                    <div class="photo-text">
+                        Ours First Hug Day Moment 🫂
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LETTER ================= -->
+
+        <section class="section letter-section">
+
+            <p class="small-title">
+                A LITTLE MSG FOR YOU MY QUEEN 👸🏻💕
+            </p>
+
+            <h2>
+                From My Heart 💌
+            </h2>
+
+            <div class="letter">
+
+                <p id="letterText"></p>
+
+                <div class="signature">
+                    Forever Yours Arika ❣️
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VOICE NOTE ================= -->
+
+        <section class="section voice-section">
+
+            <p class="small-title">
+                LISTEN TO ME
+            </p>
+
+            <h2>
+                I Have Something To Tell You 🎙️
+            </h2>
+
+            <p class="section-text">
+                Some feelings are better heard than written.
+            </p>
+
+
+            <div class="voice-card">
+
+                <div class="voice-icon">
+                    🎙️
+                </div>
+
+                <h3>
+                    My Voice For You
+                </h3>
+
+                <p id="voiceStatus">
+                    Press play and listen ❤️
+                </p>
+
+
+                <!-- Waveform -->
+
+                <div class="wave" id="voiceWave">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <!-- Voice Audio -->
+
+                <audio id="voiceAudio">
+                    <source
+                        src="WhatsApp Audio 2026-10-06 at 2.33.53 PM.mp3"
+                        type="audio/mpeg">
+                </audio>
+
+
+                <!-- Play Button -->
+
+                <button
+                    class="play-btn"
+                    id="playButton"
+                    onclick="toggleVoice()">
+
+                    ▶
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BIRTHDAY WISH ================= -->
+
+        <section class="section wish-section">
+
+            <div class="cake">
+
+                <div class="candle">
+
+                    <div class="flame"></div>
+
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-body">
+                    🎂
+                </div>
+
+            </div>
+
+
+            <p class="small-title">
+                MAKE A WISH
+            </p>
+
+            <h2>
+                Close Your Eyes & Make A Wish Darling✨
+            </h2>
+
+            <p>
+                Then click the button...
+            </p>
+
+            <button
+                class="main-btn"
+                onclick="makeWish()">
+
+                Make Your Wish ✨
+
+            </button>
+
+        </section>
+
+
+        <!-- ================= FINAL SURPRISE ================= -->
+
+        <section class="final-section" id="final">
+
+            <div class="final-content">
+
+                <div
+                    class="gift"
+                    id="gift"
+                    onclick="openGift()">
+
+                    🎁
+
+                </div>
+
+
+                <p class="small-title">
+                    ONE LAST SURPRISE MINE EHH
+                </p>
+
+                <h2>
+                    I Have One More Thing...
+                </h2>
+
+
+                <button
+                    class="main-btn"
+                    onclick="openGift()">
+
+                    Open Your Gift Baby🎁
+
+                </button>
+
+
+                <!-- FINAL MESSAGE -->
+
+                <div
+                    class="final-message"
+                    id="finalMessage">
+
+                    <div class="big-heart">
+                        ❤️
+                    </div>
+
+                    <h1>
+                        Happy Birthday
+                        <span>Dii Pondatti</span>
+                    </h1>
+
+                    <p>
+                        You are the only one favourite & beautiful
+                        person in my life ma.
+                    </p>
+
+                    <p>
+                        I hope this year brings you
+                        everything your heart wishes for.
+                    </p>
+
+                    <h3>
+                        I Love You Forever Darling 💕😘
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FLOATING HEARTS ================= -->
+
+    <div id="hearts"></div>
+
+
+    <!-- ================= CONFETTI ================= -->
+
+    <div id="confetti"></div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
